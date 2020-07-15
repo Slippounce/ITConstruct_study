@@ -1,0 +1,356 @@
+/*===============================common styles==============================*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+p {
+ font-size: 9.5px;
+    line-height: 15px;
+}
+a:link,
+a:visited,
+a:active {
+    
+}
+a:hover{
+    color: #2b7de0;
+}
+a:hover {
+
+}
+img {
+}
+
+
+
+.cars__item{
+    display:flex;
+    align-items: center;
+    height: 180px;
+    width: 720px;
+}
+
+@media (max-width: 480px) {
+    .cars__item{
+        flex-direction: column;
+        width: 480px;
+        height: auto;
+        padding: 35px 0;
+
+    }
+}
+
+.car-link{
+    position: relative;
+    margin-left: 27px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+    .car-link{
+        margin: 0;
+    }
+}
+
+.car-link img{
+    width: 116px;
+}
+
+@media (max-width: 480px) {
+    .car-link img{
+        width: 378px;
+    }
+}
+
+.car__marks{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+ .car__marks{
+     width: inherit;
+ }
+}
+
+.mark{
+    color: #ffffff;
+    font-size: 9px;
+    background-color: #777777;
+    padding: 5px 7px;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+}
+
+@media (max-width: 480px) {
+    .mark{
+        font-size: 12px;
+        padding: 7px 9px;
+        margin-right: 4px;
+    }
+}
+
+.mark-recommended{
+    background-color: #7558cd;
+}
+
+.mark-new{
+    background-color: #62c34b;
+}
+
+.mark-popular{
+    background-color: #e74650;
+}
+
+.mark-sale{
+    background-color: #f7d33b;
+    color: black;
+}
+
+.car__parameters{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    width: 325px;
+    padding: 0 25px;
+}
+
+@media (max-width: 480px) {
+    .car__parameters{
+        padding: 0 51px;
+    }
+}
+
+.parameters__name{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    margin-top: 27px;
+}
+
+@media (max-width: 480px) {
+    .parameters__name{
+        font-size: 16px;
+    }
+}
+
+.parameters__description{
+    font-size: 9.5px;
+    color: #777777;
+    padding: 0 0;
+    margin: 11px 0 17px 0;
+}
+
+@media (max-width: 480px) {
+    .parameters__description{
+        font-size: 13px;
+        margin: 21px 0 21px 0;
+        width: 380px;
+        line-height: 19px;
+    }
+}
+
+.parameters__measures p{
+    font-size: 9.5px;
+}
+
+@media (max-width: 480px) {
+    .parameters__measures p{
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+}
+
+.parameters__measures .measure{
+    color: #777777;
+}
+
+.parameters__measures .value{
+    color: black;
+}
+
+.car__puchase-info{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin: 0 0 0 38px;
+}
+
+@media (max-width: 480px) {
+    .car__puchase-info{
+        margin: 0;
+        padding: 3px 52px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
+.price-info__availability{
+    text-transform: uppercase;
+    font-size: 8px;
+    margin: 23px 0 7px 0;
+}
+
+@media (max-width: 480px) {
+    .price-info__availability{
+        font-size: 11px;
+    }
+}
+
+.price-info__availability-expected{
+    color: #f28c29;
+}
+
+.price-info__availability-availible{
+    color: #5fa800;
+}
+
+.price-info__cost{
+    font: bold 12.5px sans-serif;
+    color: #333333;
+}
+
+@media (max-width: 480px) {
+    .price-info__cost{
+        font-size: 17px;
+        padding: 8px 0;
+    }
+}
+
+.price-info__old-cost{
+    text-decoration: line-through;
+    color: #777777;
+    font-size: 9.5px;
+    margin-top: 3px;
+;
+}
+
+@media (max-width: 480px) {
+    .price-info__old-cost{
+        color: black;
+        font-size: 13px;
+    }
+}
+
+.price-info__controls{
+    font-size: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #777777;
+    margin: 12px 0 2px 0;
+
+    height: 26px;
+    width: 139px;
+    background-color: #f8f9fb;
+    border-radius: 2px;
+}
+
+@media (max-width: 480px) {
+    .price-info__controls{
+        font-size: 13px;
+        width: 193px;
+        padding: 5px 0;
+    }
+    .price-info__controls button{
+        font-size: 15pt;
+    }
+}
+
+.minus, .plus{
+    color: #777777;
+    fill: #777777;
+    border: none;
+    background-color: #f8f9fb;
+}
+
+.price-info__controls button:hover img{
+    color: #2b7de0;
+    fill: #2b7de0;
+    cursor: pointer;
+}
+
+.price-info__controls img{
+    width: 50%;
+    opacity: 50%;
+}
+
+.puchase-controls__to-card{
+    width: 139px;
+    height: 26px;
+    font-size: 8.5pt;
+    background-color: #2b7de0;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+
+.puchase-controls__to-card:hover{
+    background-color: #4289e0;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .puchase-controls__to-card{
+        font-size: 12pt;
+        width: 193px;
+        height: inherit;
+        padding: 10px 0;
+    }
+}
+
+
+
+.equipment{
+    color: #777777;
+    vertical-align: bottom;
+    display: flex;
+}
+
+@media (max-width: 480px) {
+    .equipment{
+        margin: 40px 0 0 65px;
+
+    }
+}
+
+.equipment p{
+    width: 130px;
+    font-size: 9px;
+    }
+
+@media (max-width: 480px) {
+    .equipment p{
+        font-size: 12px;
+    }
+}
+
+.equipment img{
+    width: 12px;
+    height: 13px;
+    margin-right: 3px;
+    opacity: 50%;
+}
+
+@media (max-width: 480px) {
+    .equipment img{
+        width: 16px;
+        height: 17px;
+        margin: 0 7px 0 0;
+    }
+}
+
