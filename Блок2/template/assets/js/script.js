@@ -1,22 +1,23 @@
-let minus_button = document.querySelectorAll('.minus');
-let plus_button = document.querySelectorAll('.plus');
-let quantity = document.querySelectorAll('.quantity');
+let minus_button = document.querySelectorAll('.purchase-controls__minus');
+let plus_button = document.querySelectorAll('.purchase-controls__plus');
+let quantity = document.querySelectorAll('.purchase-controls__quantity');
 
-console.log(minus_button);
-
-for (let i = 0; i < minus_button.length; i++){
-    minus_button[i].addEventListener('click', e => {
-        let number = Number.parseInt(quantity[i].innerHTML);
-        if(number > 1){
-            quantity[i].innerHTML = (number-1).toString();
+window.onload = () => {
+    document.querySelector('.cars').addEventListener('click', e =>{
+        let value;
+        if(e.target.closest('button')) {
+            if (e.target.closest('button').classList.contains('purchase-controls__minus')) {
+                value = Number.parseInt(e.target.closest('button').nextElementSibling.firstChild.value);
+                if (value > 1) {
+                    e.target.closest('button').nextElementSibling.firstChild.value = value - 1;
+                }
+            }
+            if (e.target.closest('button').classList.contains('purchase-controls__plus')) {
+                value = Number.parseInt(e.target.closest('button').previousElementSibling.firstChild.value);
+                if (value < 10) {
+                    e.target.closest('button').previousElementSibling.firstChild.value = value + 1;
+                }
+            }
         }
     });
-
-    plus_button[i].addEventListener('click', e => {
-        let number = Number.parseInt(quantity[i].innerHTML);
-        if(number < 10){
-            quantity[i].innerHTML = (number+1).toString();
-        }
-    });
-}
-
+};

@@ -9,62 +9,102 @@
     <title>Document</title>
 </head>
 <body>
+<main>
     <ul class="cars">
         <li class="cars__item car">
-            <a href="#" class="car-link"><img src="images/car_1.png" alt="car_photo"><div class="car__marks"><span class="mark mark-recommended">Мы советуем</span><span class="mark mark-new">Новинка</span></div></a>
-
-
-            <div class="car__parameters parameters">
-                <a href="#" class="parameters__name">Backen Ponevira</a>
-                <p class="parameters__description">Люксовый автомобиль, который сумел объединить в себе несочетаемое: мощность и комфорт, динамику и экономичность, бизнес и поездки с семьей.</p>
-                    <div class="parameters__measures">
-                        <p><span class="measure">Мощность, л.с.  —  </span>
-                        <span class="value">440</span></p>
-                        <p><span class="measure">Объем двигателя, куб. см. — </span>
-                        <span class="value">2894</span></p>
-                        <p><span class="measure">Разгон до 100 км/ч, — </span>
-                        <span class="value">4.4</span></p>
-                    </div>
-            </div>
-            <div class="car__puchase-info puchase-info">
-                <div class="purhase-info__price-info price-info">
-                    <p class="price-info__availability price-info__availability-expected ">Ожидается</p>
-                    <p class="price-info__cost">от <span class="number">6 218 000</span> р.</p>
-                    <div class="price-info__controls"><button class="minus"><img src="images/minus.svg" alt="minus"></button><span class="quantity">1</span><button class="plus">
-                        <img src="images/plus.svg" alt="plus"></button></div>
-                    <button name="to_card" class="puchase-controls__to-card">в корзину</button>
+            <a href="#" class="car__link">
+                <img src="images/content/car_1.jpg" alt="car_photo">
+                <div class="car__marks">
+                    <span class="marks_mark mark-recommended">Мы советуем</span>
+                    <span class="marks_mark mark-new">Новинка</span>
                 </div>
-                <div class="purchase-info__equipment equipment"><img src="images/info.svg" alt="info_icon"><p>Немецкая сборка</p></div>
+            </a>
+
+            <div class="car__car-info car-info">
+                <a href="#" class="car-info__name">Backen Ponevira</a>
+                <p class="car-info__description">Люксовый автомобиль, который сумел
+                    объединить в себе несочетаемое: мощность и комфорт, динамику
+                    и экономичность, бизнес и поездки с семьей.</p>
+
+                <dl class="car-info__parameters">
+                    <dt class="measure">Мощность,&nbsp;л.с.&nbsp;&nbsp;</dt>
+                    <dd class="value">&nbsp;&nbsp;440</dd>
+                    <dt class="measure">Объем&nbsp;двигателя,&nbsp;куб.&nbsp;см.&nbsp;&nbsp;</dt>
+                    <dd class="value">&nbsp;&nbsp;2894</dd>
+                    <dt class="measure">Разгон&nbsp;до&nbsp;100&nbsp;км/ч,&nbsp;&nbsp;</dt>
+                    <dd class="value">&nbsp;&nbsp;4.4</dd>
+                </dl>
+            </div>
+            <div class="car__puchase-info">
+                <div class="car__price-info price-info">
+                    <p class="car__availability car__availability-expected availability">Ожидается</p>
+                    <div class="car__cost-info cost-info">
+                        <p class="cost-info__actual-cost">от <span class="number">6 218 000</span> р.</p>
+                    </div>
+                    <div class="car__purchase-controls purchase-controls">
+                        <button class="purchase-controls__minus"><img src="images/design/minus.svg" alt="minus"></button>
+                       <label><input type="text" class="purchase-controls__quantity"  value="1" readonly></label>
+                        <button class="purchase-controls__plus"><img src="images/design/plus.svg" alt="plus"></button>
+                    </div>
+                    <button name="to_card" class="car__action-button">в корзину</button>
+                </div>
+                <div class="car__equipment equipment">
+                    <img src="images/design/info.svg" alt="info-icon"><p>Немецкая сборка</p>
+                </div>
             </div>
 
         </li>
-        <li class="cars__item car">
-            <a href="#" class="car-link"><img src="images/car_2.png" alt="car_photo"><div class="car__marks"><span class="mark mark-sale">Акция</span><span class="mark mark-recommended">Мы советуем</span><span class="mark mark-new">Новинка</span><span class="mark mark-popular">Хит</span></div></a>
-            <div class="car__parameters parameters">
-                <a href="#" class="parameters__name">Backen Mocen</a>
-                <p class="parameters__description">Спортивный кроссовер для тех, кто предпочитает быть всегда первым – эффектный вид, полный привод, возвышенная посадка и мощный двигатель.</p>
-                <div class="parameters__measures">
-                    <p><span class="measure">Мощность, л.с.  —  </span>
-                        <span class="value">360</span></p>
-                    <p><span class="measure">Объем двигателя, куб. см. — </span>
-                        <span class="value">2997</span></p>
-                    <p><span class="measure">Разгон до 100 км/ч, — </span>
-                        <span class="value">5.2</span></p>
-                </div>
-            </div>
-            <div class="car__puchase-info puchase-info">
-                <div class="purhase-info__price-info price-info">
-                    <p class="price-info__availability price-info__availability-availible">В наличии</p>
-                    <p class="price-info__cost">от <span class="number">5 506 000</span> р.</p>
-                    <p class="price-info__old-cost">5720000 р.</p>
-                    <div class="price-info__controls"><button class="minus"><img src="images/minus.svg" alt="minus"></button><span class="quantity">1</span><button class="plus"><img src="images/plus.svg" alt="plus"></button></div>
-                    <button name="to_card" class="puchase-controls__to-card">в корзину</button>
-                </div>
-                <div class="purchase-info__equipment equipment"><img src="images/info.svg" alt="info_icon"><p>Прямая поставка из Германии</p></div>
-            </div>
 
+
+
+        <li class="cars__item car">
+            <a href="#" class="car__link">
+                <img src="images/content/car_2.jpg" alt="car_photo">
+                <div class="car__marks">
+                    <span class="marks_mark mark-sale">Акция</span>
+                    <span class="marks_mark mark-recommended">Мы советуем</span>
+                    <span class="marks_mark mark-new">Новинка</span>
+                    <span class="marks_mark mark-popular">Хит</span>
+                </div>
+            </a>
+
+            <div class="car__car-info car-info">
+                <a href="#" class="car-info__name">Backen Mocen</a>
+                <p class="car-info__description">Спортивный кроссовер для тех,
+                    кто предпочитает быть всегда первым – эффектный вид, полный привод,
+                    возвышенная посадка и мощный двигатель.</p>
+
+                <dl class="car-info__parameters">
+                    <dt class="measure">Мощность,&nbsp;л.с.&nbsp;&nbsp;</dt>
+                    <dd class="value">&nbsp;&nbsp;360</dd>
+                    <dt class="measure">Объем&nbsp;двигателя,&nbsp;куб.&nbsp;см.&nbsp;&nbsp;</dt>
+                    <dd class="value">&nbsp;&nbsp;2997</dd>
+                    <dt class="measure">Разгон&nbsp;до&nbsp;100&nbsp;км/ч,&nbsp;&nbsp;</dt>
+                    <dd class="value">&nbsp;&nbsp;5.2</dd>
+                </dl>
+            </div>
+            <div class="car__puchase-info">
+                <div class="car__price-info price-info">
+                    <p class="car__availability car__availability-availible availability">В наличии</p>
+                    <div class="car__cost-info cost-info">
+                        <p class="cost-info__actual-cost">от <span class="number">5 506 000</span> р.</p>
+                        <p class="cost-info__old-cost">5 720 000 р.</p>
+                    </div>
+                    <div class="car__purchase-controls purchase-controls">
+                        <button class="purchase-controls__minus"><img src="images/design/minus.svg" alt="minus"></button>
+                        <label><input type="text" class="purchase-controls__quantity"  value="1" readonly></label>
+                        <button class="purchase-controls__plus"><img src="images/design/plus.svg" alt="plus"></button>
+                    </div>
+                    <button name="to_card" class="car__action-button">в корзину</button>
+                </div>
+                <div class="car__equipment equipment">
+                    <img src="images/design/info.svg" alt="info-icon"><p>Прямая поставка из Германии</p>
+                </div>
+            </div>
         </li>
     </ul>
+</main>
+
 
 
 <script src="assets/js/script.js"></script>

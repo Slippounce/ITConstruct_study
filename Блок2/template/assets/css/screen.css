@@ -31,11 +31,16 @@ img {
 
 
 
+.cars{
+    padding: 0 0 0 1px;
+}
+
 .cars__item{
     display:flex;
     align-items: center;
     height: 180px;
     width: 720px;
+    margin: 1px 0 0 -1px;
 }
 
 @media (max-width: 480px) {
@@ -43,29 +48,28 @@ img {
         flex-direction: column;
         width: 480px;
         height: auto;
-        padding: 35px 0;
-
+        padding: 35px 0 30px 0;
     }
 }
 
-.car-link{
+.car__link{
     position: relative;
     margin-left: 27px;
     margin-bottom: 10px;
 }
 
 @media (max-width: 480px) {
-    .car-link{
-        margin: 0;
+    .car__link{
+        margin: 0 0 1px 0;
     }
 }
 
-.car-link img{
+.car__link img{
     width: 116px;
 }
 
 @media (max-width: 480px) {
-    .car-link img{
+    .car__link img{
         width: 378px;
     }
 }
@@ -83,7 +87,7 @@ img {
  }
 }
 
-.mark{
+.marks_mark{
     color: #ffffff;
     font-size: 9px;
     background-color: #777777;
@@ -94,7 +98,7 @@ img {
 }
 
 @media (max-width: 480px) {
-    .mark{
+    .marks_mark{
         font-size: 12px;
         padding: 7px 9px;
         margin-right: 4px;
@@ -118,7 +122,7 @@ img {
     color: black;
 }
 
-.car__parameters{
+.car__car-info{
     display: flex;
     flex-direction: column;
     align-self: stretch;
@@ -127,56 +131,77 @@ img {
 }
 
 @media (max-width: 480px) {
-    .car__parameters{
-        padding: 0 51px;
+    .car__car-info{
+        padding: 0 52px;
     }
 }
 
-.parameters__name{
+.car-info__name{
     font-size: 12px;
     color: black;
     text-decoration: none;
-    margin-top: 27px;
+    margin: 27px 0 0 0;
 }
 
 @media (max-width: 480px) {
-    .parameters__name{
+    .car-info__name{
         font-size: 16px;
+
     }
 }
 
-.parameters__description{
+.car-info__description{
     font-size: 9.5px;
     color: #777777;
     padding: 0 0;
-    margin: 11px 0 17px 0;
+    margin: 11px 0 16px 0;
 }
 
 @media (max-width: 480px) {
-    .parameters__description{
+    .car-info__description{
         font-size: 13px;
-        margin: 21px 0 21px 0;
+        margin: 20px 0 19px 0;
         width: 380px;
         line-height: 19px;
     }
 }
 
-.parameters__measures p{
+.car-info__parameters{
     font-size: 9.5px;
+    width: 200px;
+}
+
+dl{
+    margin: 3px 0;
+}
+
+dt,
+dd{
+    display: inline-block;
+    margin: 0 0 6px 0;
+}
+
+dt::after{
+    content: "—";
+
 }
 
 @media (max-width: 480px) {
-    .parameters__measures p{
+    .car-info__parameters{
+        width: 250px;
+    }
+    dt, dd{
         font-size: 13px;
-        margin-bottom: 7px;
+        margin: 0 0 8px 0;
     }
 }
 
-.parameters__measures .measure{
+.car-info__parameters .measure{
     color: #777777;
 }
 
-.parameters__measures .value{
+
+.car-info__parameters .value{
     color: black;
 }
 
@@ -184,7 +209,7 @@ img {
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    margin: 0 0 0 38px;
+    margin: -2px 0 0 38px;
 }
 
 @media (max-width: 480px) {
@@ -198,118 +223,140 @@ img {
 
 
 
-.price-info__availability{
+.car__availability{
     text-transform: uppercase;
     font-size: 8px;
     margin: 23px 0 7px 0;
 }
 
 @media (max-width: 480px) {
-    .price-info__availability{
+    .car__availability{
         font-size: 11px;
     }
 }
 
-.price-info__availability-expected{
+.car__availability-expected{
     color: #f28c29;
 }
 
-.price-info__availability-availible{
+.car__availability-availible{
     color: #5fa800;
 }
 
-.price-info__cost{
-    font: bold 12.5px sans-serif;
+.cost-info__actual-cost{
+    font: bold 12.5px 'Montserrat', sans-serif;
     color: #333333;
 }
 
 @media (max-width: 480px) {
-    .price-info__cost{
+    .cost-info__actual-cost{
         font-size: 17px;
         padding: 8px 0;
     }
 }
 
-.price-info__old-cost{
+.cost-info__old-cost{
     text-decoration: line-through;
     color: #777777;
     font-size: 9.5px;
-    margin-top: 3px;
-;
+    margin: 3px 0 -1px 0;
 }
 
 @media (max-width: 480px) {
-    .price-info__old-cost{
+    .cost-info__old-cost{
         color: black;
         font-size: 13px;
+        margin: 0 0 18px 0;
     }
 }
 
-.price-info__controls{
+.car__purchase-controls{
     font-size: 9px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #777777;
-    margin: 12px 0 2px 0;
-
-    height: 26px;
+    margin: 14px 0 2px 0;
+    padding: 4px 0;
     width: 139px;
     background-color: #f8f9fb;
     border-radius: 2px;
 }
 
+.purchase-controls__quantity{
+    background-color: inherit;
+    /*border: 1px solid black;*/
+    font: 9px 'Montserrat', sans-serif;
+    color: inherit;
+    /*font-size: 9px;*/
+    border: none;
+    text-align: center;
+
+    width: 20px;
+}
+
 @media (max-width: 480px) {
-    .price-info__controls{
+    .car__purchase-controls{
         font-size: 13px;
         width: 193px;
-        padding: 5px 0;
+        padding: 8px 0;
+        margin: 11px 0 0 0;
     }
-    .price-info__controls button{
+    .car__purchase-controls button{
         font-size: 15pt;
+        padding: 0 4px;
+    }
+    .purchase-controls__quantity{
+      font-size: 13px;
     }
 }
 
-.minus, .plus{
-    color: #777777;
-    fill: #777777;
+.purchase-controls__minus,
+.purchase-controls__plus{
+    padding: 3px 0 0 0;
     border: none;
     background-color: #f8f9fb;
 }
 
-.price-info__controls button:hover img{
+.car__purchase-controls button:hover img{
     color: #2b7de0;
     fill: #2b7de0;
     cursor: pointer;
 }
 
-.price-info__controls img{
+.car__purchase-controls img{
     width: 50%;
     opacity: 50%;
 }
 
-.puchase-controls__to-card{
+@media (max-width: 480px) {
+    .car__purchase-controls img{
+        width: 70%;
+    }
+}
+
+.car__action-button{
     width: 139px;
-    height: 26px;
-    font-size: 8.5pt;
+    font: 8.5pt 'Montserrat', sans-serif;
     background-color: #2b7de0;
     color: #ffffff;
     border: none;
     border-radius: 2px;
-    margin-bottom: 12px;
+    margin: 0 0 10px 0;
+    padding: 5px 0 7px 0;
 }
 
-.puchase-controls__to-card:hover{
+.car__action-button:hover{
     background-color: #4289e0;
     cursor: pointer;
 }
 
 @media (max-width: 480px) {
-    .puchase-controls__to-card{
+    .car__action-button{
         font-size: 12pt;
         width: 193px;
-        height: inherit;
-        padding: 10px 0;
+        padding: 9px 0 9px 0;
+        margin: 0;
     }
 }
 
@@ -342,7 +389,7 @@ img {
 .equipment img{
     width: 12px;
     height: 13px;
-    margin-right: 3px;
+    margin: 0 4px 0 0;
     opacity: 50%;
 }
 
