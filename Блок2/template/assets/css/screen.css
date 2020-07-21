@@ -245,19 +245,19 @@ dt::after{
     color: #5fa800;
 }
 
-.cost-info__actual-cost{
+.car__actual-cost{
     font: bold 12.5px 'Montserrat', sans-serif;
     color: #333333;
 }
 
 @media (max-width: 480px) {
-    .cost-info__actual-cost{
+    .car__actual-cost{
         font-size: 17px;
         padding: 8px 0;
     }
 }
 
-.cost-info__old-cost{
+.car__old-cost{
     text-decoration: line-through;
     color: #777777;
     font-size: 9.5px;
@@ -266,7 +266,7 @@ dt::after{
 }
 
 @media (max-width: 480px) {
-    .cost-info__old-cost{
+    .car__old-cost{
         color: black;
         font-size: 13px;
         margin: 0 0 18px 0;
