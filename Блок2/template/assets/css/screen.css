@@ -183,7 +183,7 @@ dd{
 }
 
 dt::after{
-    content: "—";
+    content: "\00a0\00a0—\00a0\00a0";
 
 }
 
@@ -200,6 +200,7 @@ dt::after{
 .car__parameters .parameters__measure{
     color: #777777;
 }
+
 
 
 .car__parameters .parameters__value{
