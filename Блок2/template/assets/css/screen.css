@@ -29,6 +29,9 @@ a:hover {
 img {
 }
 
+button:focus, .purchase-controls__quantity{
+    outline: none;
+}
 
 
 .cars{
