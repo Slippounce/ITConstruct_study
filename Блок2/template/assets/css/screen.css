@@ -89,7 +89,7 @@ button:focus, .purchase-controls__quantity{
  }
 }
 
-.marks_mark{
+.marks_item{
     color: #ffffff;
     font-size: 9px;
     /*background-color: #777777;*/
@@ -100,7 +100,7 @@ button:focus, .purchase-controls__quantity{
 }
 
 @media (max-width: 480px) {
-    .marks_mark{
+    .marks_item{
         font-size: 12px;
         padding: 7px 9px;
         margin-right: 4px;
