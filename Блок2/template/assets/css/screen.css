@@ -33,7 +33,6 @@ button:focus, .purchase-controls__quantity{
     outline: none;
 }
 
-
 .cars{
     padding: 0 0 0 1px;
 }
@@ -149,7 +148,6 @@ button:focus, .purchase-controls__quantity{
 @media (max-width: 480px) {
     .car-info__name{
         font-size: 16px;
-
     }
 }
 
@@ -224,12 +222,12 @@ dt::after{
     }
 }
 
-
-
 .car__availability{
     text-transform: uppercase;
     font-size: 8px;
     margin: 23px 0 7px 0;
+    display: block;
+    line-height: 15px;
 }
 
 @media (max-width: 480px) {
@@ -263,6 +261,7 @@ dt::after{
     color: #777777;
     font-size: 9.5px;
     margin: 3px 0 -1px 0;
+    line-height: 15px;
 }
 
 @media (max-width: 480px) {
@@ -288,13 +287,10 @@ dt::after{
 
 .purchase-controls__quantity{
     background-color: inherit;
-    /*border: 1px solid black;*/
     font: 9px 'Montserrat', sans-serif;
     color: inherit;
-    /*font-size: 9px;*/
     border: none;
     text-align: center;
-
     width: 20px;
 }
 
@@ -327,7 +323,6 @@ dt::after{
 }
 
 .car__purchase-controls svg{
-    /*object-fit: fill;*/
     width: 12px;
     height: 13px;
     color: #777777;
@@ -365,8 +360,6 @@ dt::after{
     }
 }
 
-
-
 .equipment{
     color: #777777;
     vertical-align: bottom;
@@ -376,7 +369,6 @@ dt::after{
 @media (max-width: 480px) {
     .equipment{
         margin: 40px 0 0 65px;
-
     }
 }
 
@@ -405,4 +397,3 @@ dt::after{
         margin: 0 7px 0 0;
     }
 }
-
