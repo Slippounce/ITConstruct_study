@@ -50,7 +50,7 @@ button:focus, .purchase-controls__quantity{
         flex-direction: column;
         width: 480px;
         height: auto;
-        padding: 35px 0 30px 0;
+        padding: 35px 0 32px 0;
     }
 }
 
@@ -102,7 +102,7 @@ button:focus, .purchase-controls__quantity{
 @media (max-width: 480px) {
     .marks_item{
         font-size: 12px;
-        padding: 7px 9px;
+        padding: 7px 9px 7px 9px;
         margin-right: 4px;
     }
 }
@@ -180,6 +180,7 @@ button:focus, .purchase-controls__quantity{
 .parameters__value{
     display: inline-block;
     margin: 0 0 6px 0;
+    /*line-height: 14px;*/
 }
 
 .parameters__measure::after{
@@ -194,7 +195,7 @@ button:focus, .purchase-controls__quantity{
     .parameters__measure,
     .parameters__value{
         font-size: 13px;
-        margin: 0 0 8px 0;
+        margin: 0 0 9px 0;
     }
 }
 
@@ -218,7 +219,7 @@ button:focus, .purchase-controls__quantity{
 @media (max-width: 480px) {
     .car__puchase-info{
         margin: 0;
-        padding: 3px 52px;
+        padding: 1px 52px 3px 52px;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -254,7 +255,7 @@ button:focus, .purchase-controls__quantity{
 @media (max-width: 480px) {
     .car__actual-cost{
         font-size: 17px;
-        padding: 8px 0;
+        padding: 7px 0 8px 0;
     }
 }
 
@@ -304,7 +305,7 @@ button:focus, .purchase-controls__quantity{
         margin: 11px 0 0 0;
     }
     .car__purchase-controls button{
-        font-size: 15pt;
+        /*font-size: 15pt;*/
         padding: 0 4px;
     }
     .purchase-controls__quantity{
@@ -340,7 +341,7 @@ button:focus, .purchase-controls__quantity{
 
 .car__action-button{
     width: 139px;
-    font: 8.5pt 'Montserrat', sans-serif;
+    font: 10px 'Montserrat', sans-serif;
     background-color: #2b7de0;
     color: #ffffff;
     border: none;
@@ -356,10 +357,12 @@ button:focus, .purchase-controls__quantity{
 
 @media (max-width: 480px) {
     .car__action-button{
-        font-size: 12pt;
+        /*font: 15px 'Montserrat', sans-serif;*/
+        text-transform: uppercase;
+        font-size: 14px;
         width: 193px;
         padding: 9px 0 9px 0;
-        margin: 0;
+        margin: 3px 0 0 0;
     }
 }
 
