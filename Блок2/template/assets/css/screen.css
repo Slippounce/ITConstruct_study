@@ -330,8 +330,9 @@ dt::after{
 }
 
 @media (max-width: 480px) {
-    .car__purchase-controls img{
-        width: 70%;
+    .car__purchase-controls svg{
+        width: 16px;
+        height: 17px;
     }
 }
 
