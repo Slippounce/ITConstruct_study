@@ -136,7 +136,7 @@ button:focus, .purchase-controls__quantity{
 
 @media (max-width: 480px) {
     .car__car-info{
-        padding: 0 52px;
+        padding: 2px 52px 0 52px;
     }
 }
 
@@ -350,7 +350,6 @@ button:focus, .purchase-controls__quantity{
 
 @media (max-width: 480px) {
     .car__action-button{
-        /*font: 15px 'Montserrat', sans-serif;*/
         text-transform: uppercase;
         font-size: 14px;
         width: 193px;
