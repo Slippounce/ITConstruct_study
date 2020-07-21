@@ -1,6 +1,8 @@
 /*===============================common styles==============================*/
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    color: #777777;
 }
 h1 {
 
@@ -12,7 +14,7 @@ h3 {
 
 }
 p {
- font-size: 9.5px;
+    font-size: 9.5px;
     line-height: 15px;
 }
 a:link,
@@ -153,7 +155,6 @@ button:focus, .purchase-controls__quantity{
 
 .car__description{
     font-size: 9.5px;
-    color: #777777;
     padding: 0 0;
     margin: 11px 0 16px 0;
 }
@@ -198,12 +199,6 @@ button:focus, .purchase-controls__quantity{
         margin: 0 0 9px 0;
     }
 }
-
-.car__parameters .parameters__measure{
-    color: #777777;
-}
-
-
 
 .car__parameters .parameters__value{
     color: black;
@@ -261,7 +256,6 @@ button:focus, .purchase-controls__quantity{
 
 .car__old-cost{
     text-decoration: line-through;
-    color: #777777;
     font-size: 9.5px;
     margin: 3px 0 -1px 0;
     line-height: 15px;
@@ -280,7 +274,6 @@ button:focus, .purchase-controls__quantity{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #777777;
     margin: 14px 0 2px 0;
     padding: 4px 0;
     width: 139px;
@@ -367,7 +360,6 @@ button:focus, .purchase-controls__quantity{
 }
 
 .equipment{
-    color: #777777;
     vertical-align: bottom;
     align-items: center;
     display: flex;
