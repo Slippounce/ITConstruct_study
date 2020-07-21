@@ -197,12 +197,12 @@ dt::after{
     }
 }
 
-.car__parameters .measure{
+.car__parameters .parameters__measure{
     color: #777777;
 }
 
 
-.car__parameters .value{
+.car__parameters .parameters__value{
     color: black;
 }
 
