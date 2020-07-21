@@ -138,7 +138,7 @@ button:focus, .purchase-controls__quantity{
     }
 }
 
-.car-info__name{
+.car__name{
     font-size: 12px;
     color: black;
     text-decoration: none;
@@ -146,12 +146,12 @@ button:focus, .purchase-controls__quantity{
 }
 
 @media (max-width: 480px) {
-    .car-info__name{
+    .car__name{
         font-size: 16px;
     }
 }
 
-.car-info__description{
+.car__description{
     font-size: 9.5px;
     color: #777777;
     padding: 0 0;
@@ -159,7 +159,7 @@ button:focus, .purchase-controls__quantity{
 }
 
 @media (max-width: 480px) {
-    .car-info__description{
+    .car__description{
         font-size: 13px;
         margin: 20px 0 19px 0;
         width: 380px;
@@ -167,7 +167,7 @@ button:focus, .purchase-controls__quantity{
     }
 }
 
-.car-info__parameters{
+.car__parameters{
     font-size: 9.5px;
     width: 200px;
 }
@@ -188,7 +188,7 @@ dt::after{
 }
 
 @media (max-width: 480px) {
-    .car-info__parameters{
+    .car__parameters{
         width: 250px;
     }
     dt, dd{
@@ -197,12 +197,12 @@ dt::after{
     }
 }
 
-.car-info__parameters .measure{
+.car__parameters .measure{
     color: #777777;
 }
 
 
-.car-info__parameters .value{
+.car__parameters .value{
     color: black;
 }
 
