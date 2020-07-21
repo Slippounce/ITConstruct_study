@@ -172,17 +172,17 @@ button:focus, .purchase-controls__quantity{
     width: 200px;
 }
 
-dl{
+.car__parameters{
     margin: 3px 0;
 }
 
-dt,
-dd{
+.parameters__measure,
+.parameters__value{
     display: inline-block;
     margin: 0 0 6px 0;
 }
 
-dt::after{
+.parameters__measure::after{
     content: "\00a0\00a0—\00a0\00a0";
 
 }
@@ -191,7 +191,8 @@ dt::after{
     .car__parameters{
         width: 250px;
     }
-    dt, dd{
+    .parameters__measure,
+    .parameters__value{
         font-size: 13px;
         margin: 0 0 8px 0;
     }
