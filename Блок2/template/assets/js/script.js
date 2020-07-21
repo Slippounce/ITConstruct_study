@@ -1,6 +1,3 @@
-let minus_button = document.querySelectorAll('.purchase-controls__minus');
-let plus_button = document.querySelectorAll('.purchase-controls__plus');
-let quantity = document.querySelectorAll('.purchase-controls__quantity');
 
 window.onload = () => {
     document.querySelector('.cars').addEventListener('click', e =>{
