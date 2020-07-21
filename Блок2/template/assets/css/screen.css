@@ -237,11 +237,11 @@ dt::after{
     }
 }
 
-.car__availability-expected{
+.availability--expected{
     color: #f28c29;
 }
 
-.car__availability-availible{
+.availability--availible{
     color: #5fa800;
 }
 
