@@ -107,19 +107,19 @@ button:focus, .purchase-controls__quantity{
     }
 }
 
-.mark-recommended{
+.mark--recommended{
     background-color: #7558cd;
 }
 
-.mark-new{
+.mark--new{
     background-color: #62c34b;
 }
 
-.mark-popular{
+.mark--popular{
     background-color: #e74650;
 }
 
-.mark-sale{
+.mark--sale{
     background-color: #f7d33b;
     color: black;
 }
