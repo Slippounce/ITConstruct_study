@@ -66,12 +66,12 @@ button:focus, .purchase-controls__quantity{
     }
 }
 
-.car__link img{
+.car__image{
     width: 116px;
 }
 
 @media (max-width: 480px) {
-    .car__link img{
+    .car__image{
         width: 378px;
     }
 }
