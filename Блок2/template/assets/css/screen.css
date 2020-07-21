@@ -318,15 +318,17 @@ dt::after{
     background-color: #f8f9fb;
 }
 
-.car__purchase-controls button:hover img{
+.car__purchase-controls button:hover svg{
     color: #2b7de0;
-    fill: #2b7de0;
     cursor: pointer;
 }
 
-.car__purchase-controls img{
-    width: 50%;
-    opacity: 50%;
+.car__purchase-controls svg{
+    /*object-fit: fill;*/
+    width: 12px;
+    height: 13px;
+    color: #777777;
+    padding: 0 6px;
 }
 
 @media (max-width: 480px) {
