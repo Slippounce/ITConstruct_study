@@ -94,7 +94,6 @@ button:focus, .purchase-controls__quantity{
 .marks_item{
     color: #ffffff;
     font-size: 9px;
-    /*background-color: #777777;*/
     padding: 5px 7px;
     border-radius: 2px;
     margin-bottom: 2px;
@@ -181,7 +180,6 @@ button:focus, .purchase-controls__quantity{
 .parameters__value{
     display: inline-block;
     margin: 0 0 6px 0;
-    /*line-height: 14px;*/
 }
 
 .parameters__measure::after{
@@ -298,7 +296,6 @@ button:focus, .purchase-controls__quantity{
         margin: 11px 0 0 0;
     }
     .car__purchase-controls button{
-        /*font-size: 15pt;*/
         padding: 0 4px;
     }
     .purchase-controls__quantity{
