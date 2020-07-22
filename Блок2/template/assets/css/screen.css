@@ -272,7 +272,7 @@ button:focus, .purchase-controls__quantity{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 14px 0 2px 0;
+    margin: 14px 0 1px 0;
     padding: 4px 0;
     width: 139px;
     background-color: #f8f9fb;
@@ -337,7 +337,7 @@ button:focus, .purchase-controls__quantity{
     border: none;
     border-radius: 2px;
     margin: 0 0 10px 0;
-    padding: 5px 0 7px 0;
+    padding: 6px 0 7px 0;
 }
 
 .car__action-button:hover{
