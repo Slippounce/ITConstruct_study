@@ -1,0 +1,171 @@
+.main-wrapper{
+    max-width: 984px;
+    /*min-width: 540px;*/
+    background-color: #f6f5f3;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 15px;
+    position: relative;
+    top: -100px;
+    height: 100%;
+}
+
+#yandex-label:before {
+    border-top: 81px solid white;
+    border-left: 83px solid transparent;
+    border-right: 83px solid transparent;
+    content: "";
+    position: absolute;
+    top: 83px;
+}
+.spacer{
+    height: 160px;
+}
+
+/*.navigation_list-item p{*/
+/*    font-size: 1em;*/
+/*}*/
+
+body{
+    min-width: 1000px;
+    padding: 18px 18px;
+    margin: 0;
+}
+
+header h1{
+    font-size: 2rem;
+}
+
+#yandex-label{
+    position: absolute;
+    right: 20%;
+    top: 0;
+}
+
+.carousel{
+    position: relative;
+}
+
+main{
+    min-width: 800px;
+    width: 50%;
+    margin: 100px auto 0;
+}
+
+header{
+    text-align: center;
+    position: relative;
+}
+.button{
+    width:60px;
+    background-color: #fef200;
+    height: 60px;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 1px 1px #f88f40;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.arrow-left{
+    position: absolute;
+    bottom: -40px;
+    left: -60px;
+}
+.button img{
+    width: 65%;
+    height: 65%;
+    position: absolute;
+    top : 20%;
+    left: 20%;
+}
+.arrow-right{
+    position: absolute;
+    bottom: -40px;
+    right: -60px;
+}
+.gallery{
+    text-align: center;
+    min-width: 700px;
+}
+.video{
+    position: relative;
+}
+.video img{
+    width: 100%;
+}
+.description{
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: .85;
+    color: white;
+}
+.button.play-button{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 40%;
+    left: 330px;
+}
+.play-button img{
+    width: 50%;
+    left: 30%;
+}
+nav{
+    margin-top: 50px;
+}
+nav h2{
+    text-align: center;
+}
+.navigation_list{
+    display: flex;
+    flex-basis: 24%;
+    justify-content: space-between;
+    list-style: none;
+    /*min-width: ;*/
+}
+
+.carousel-header h1{
+    height: 111px;
+}
+
+.navigation_list p{
+    font-size: 1em;
+    height: 90px;
+}
+
+.navigation_list h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 230px;
+}
+.navigation_list li{
+    padding: 5px;
+}
+.how_to_name_this{
+    text-align: center;
+}
+.how_to_name_this h2{
+    text-align: center;
+}
+
+.how_to_name_this .try-button{
+    background: linear-gradient(#fef200, #ffdb02);
+    color: black;
+    border: none;
+    width: 200px;
+    line-height: 3em;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.try-button:hover{
+    /*opacity: .8;*/
+    background: linear-gradient(#fef26e, #ffdb02)
+}
